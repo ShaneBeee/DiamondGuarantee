@@ -192,7 +192,7 @@ public class DGEventHandler implements Listener
                 Location location = entity.getLocation();
                 if(location.getBlock().getRelative(BlockFace.DOWN).getType() == Material.NETHER_BRICK)
                 {
-                    event.getDrops().add(new ItemStack(Material.NETHER_STALK));
+                    event.getDrops().add(new ItemStack(Material.NETHER_WART));
                 }
             }
         }
@@ -212,7 +212,7 @@ public class DGEventHandler implements Listener
             
             if(DiamondGuarantee.instance.worldSettingsManager.Get(world).dragonDropsHeads)
             {
-                event.getDrops().add(new ItemStack(Material.SKULL_ITEM, 1, (byte)5));
+                event.getDrops().add(new ItemStack(Material.SKELETON_SKULL, 1, (byte)5));
             }
         }
     }
