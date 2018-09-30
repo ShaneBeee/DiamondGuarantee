@@ -212,7 +212,7 @@ public class DGEventHandler implements Listener
             
             if(DiamondGuarantee.instance.worldSettingsManager.Get(world).dragonDropsHeads)
             {
-                event.getDrops().add(new ItemStack(Material.SKELETON_SKULL, 1, (byte)5));
+                event.getDrops().add(new ItemStack(Material.DRAGON_HEAD));
             }
         }
     }
