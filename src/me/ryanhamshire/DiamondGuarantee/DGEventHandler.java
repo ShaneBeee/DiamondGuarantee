@@ -192,7 +192,7 @@ public class DGEventHandler implements Listener
                 Location location = entity.getLocation();
                 if(location.getBlock().getRelative(BlockFace.DOWN).getType() == Material.NETHER_BRICK)
                 {
-                    event.getDrops().add(new ItemStack(Material.NETHER_WART));
+                    event.getDrops().add(new ItemStack(Material.NETHER_STALK));
                 }
             }
         }
@@ -212,7 +212,11 @@ public class DGEventHandler implements Listener
             
             if(DiamondGuarantee.instance.worldSettingsManager.Get(world).dragonDropsHeads)
             {
+<<<<<<< HEAD
                 event.getDrops().add(new ItemStack(Material.DRAGON_HEAD));
+=======
+                event.getDrops().add(new ItemStack(Material.SKULL_ITEM, 1, (byte)5));
+>>>>>>> parent of e5a074a... Update material items for 1.13
             }
         }
     }
