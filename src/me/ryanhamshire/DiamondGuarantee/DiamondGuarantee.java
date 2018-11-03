@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.logging.Logger;
 
+import me.ryanhamshire.DiamondGuarantee.metrics.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.World.Environment;
@@ -38,7 +39,8 @@ public class DiamondGuarantee extends JavaPlugin
 	
 	public void onEnable()
 	{ 		
-		AddLogEntry("DiamondGuarantee enabled.");		
+		AddLogEntry("DiamondGuarantee enabled.");
+        Metrics metrics = new Metrics(this);
 		
 		instance = this;
 		
