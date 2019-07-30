@@ -1,6 +1,7 @@
 package me.ryanhamshire.DiamondGuarantee;
 
-enum Features
-{
+enum Features {
+
     GenerateDiamonds,
+
 }

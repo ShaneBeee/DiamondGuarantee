@@ -1,7 +1,7 @@
 package me.ryanhamshire.DiamondGuarantee;
 
-class WorldSettings
-{
+class WorldSettings {
+
     boolean generateDiamonds;
     boolean generateDiamondsLog;
     long diamondValue;
@@ -14,11 +14,11 @@ class WorldSettings
     boolean dragonDropsEggs;
     boolean dragonDropsElytras;
     boolean dragonDropsHeads;
-    
-    WorldSettings(){ }
-    
-    WorldSettings(WorldSettings other)
-    {
+
+    WorldSettings() {
+    }
+
+    WorldSettings(WorldSettings other) {
         this.generateDiamonds = other.generateDiamonds;
         this.generateDiamondsLog = other.generateDiamondsLog;
         this.diamondValue = other.diamondValue;
@@ -32,4 +32,5 @@ class WorldSettings
         this.dragonDropsElytras = other.dragonDropsElytras;
         this.dragonDropsHeads = other.dragonDropsHeads;
     }
+
 }

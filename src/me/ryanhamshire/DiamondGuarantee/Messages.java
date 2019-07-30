@@ -2,10 +2,11 @@
 
 package me.ryanhamshire.DiamondGuarantee;
 
-public enum Messages
-{
+public enum Messages {
+
     ReloadComplete,
     PlayerNotFound,
     DiamondScore,
     SetDiamondScore
+
 }
